@@ -1,0 +1,206 @@
+[
+    {
+      "title": "Network Connectivity",
+      "questions": [
+        { 
+          "question": "What do I do if I can't connect to the company network?",
+          "answer": "Check your network cable, ensure it's securely plugged in, and try restarting your device.",
+          "aria-controls": "panel1-content",
+          "id": "panel1-header"
+        },
+        {
+          "question": "Why can't I access the internet?",
+          "answer": "Check your network settings, ensure you're connected to the correct network, and try restarting your router.",
+          "aria-controls": "panel2-content",
+          "id": "panel2-header"
+        },
+        {
+          "question": "How do I fix a slow network connection?",
+          "answer": "Check for network congestion, close unnecessary applications, and consider upgrading your network hardware.",
+          "aria-controls": "panel2-content",
+          "id": "panel2-header"
+        },
+        {
+          "question": "What do I do if I'm unable to connect to a specific network drive?",
+          "answer": "Check your network permissions, ensure you have the necessary access rights, and try remapping the drive.",
+          "aria-controls": "panel3-content",
+          "id": "panel3-header"
+        },
+        {
+          "question": "Why do I keep getting disconnected from the network?",
+          "answer": "Check for loose connections, ensure your network card is up-to-date, and try disabling and re-enabling your network adapter.",
+          "aria-controls": "panel4-content",
+          "id": "panel4-header"
+        },
+        {
+          "question": "How do I troubleshoot a network printer issue?",
+          "answer": "Check the printer's network connection, ensure it's properly configured, and try restarting the printer.",
+          "aria-controls": "panel5-content",
+          "id": "panel5-header"
+        }
+      ]
+    },
+    {
+      "title": "Hardware Issues",
+      "questions": [
+        {
+          "question": "What do I do if my computer won't turn on?",
+          "answer": "Check the power cord, ensure it's securely plugged in, and try pressing the power button for 30 seconds.",
+          "aria-controls": "panel1-content",
+          "id": "panel1-header"
+        },
+        {
+          "question": "Why is my computer overheating?",
+          "answer": "Check for dust buildup, ensure proper airflow, and consider cleaning your computer's vents.",
+          "aria-controls": "panel2-content",
+          "id": "panel2-header"
+        },
+        {
+          "question": "How do I fix a faulty keyboard or mouse?",
+          "answer": "Try restarting your computer, ensure proper connections, and consider replacing the device.",
+          "aria-controls": "panel3-content",
+          "id": "panel3-header"
+        },
+        {
+          "question": "What do I do if my monitor isn't displaying anything?",
+          "answer": "Check the display cable, ensure it's securely plugged in, and try restarting your computer.",
+          "aria-controls": "panel4-content",
+          "id": "panel4-header"
+        },
+        {
+          "question": "Why is my computer running slowly?",
+          "answer": "Check for malware, ensure your operating system is up-to-date, and consider upgrading your hardware.",
+          "aria-controls": "panel5-content",
+          "id": "panel5-header"
+        },
+        {
+          "question": "How do I troubleshoot a printer paper jam?",
+          "answer": "Turn off the printer, locate and remove the jammed paper, and try printing again.",
+          "aria-controls": "panel6-content",
+          "id": "panel6-header"
+        }
+      ]
+    },
+    {
+      "title": "Software Issues",
+      "questions": [
+        {
+          "question": "What do I do if an application won't open?",
+          "answer": "Try restarting your computer, ensure the application is up-to-date, and consider reinstalling.",
+          "aria-controls": "panel1-content",
+          "id": "panel1-header"
+        },
+        {
+          "question": "Why do I keep getting error messages?",
+          "answer": "Check for software updates, ensure you have the necessary permissions, and try running the application as an administrator.",
+          "aria-controls": "panel2-content",
+          "id": "panel2-header"
+        },
+        {
+          "question": "How do I fix a corrupted file?",
+          "answer": "Try restoring from a backup, ensure your antivirus software is up-to-date, and consider using a file recovery program.",
+          "aria-controls": "panel3-content",
+          "id": "panel3-header"
+        },
+        {
+          "question": "What do I do if my operating system won't boot?",
+          "answer": "Try restarting your computer, ensure your operating system is up-to-date, and consider using a bootable USB drive.",
+          "aria-controls": "panel4-content",
+          "id": "panel4-header"
+        },
+        {
+          "question": "Why can't I install a new application?",
+          "answer": "Check for compatibility issues, ensure you have the necessary permissions, and try running the installer as an administrator.",
+          "aria-controls": "panel5-content",
+          "id": "panel5-header"
+        },
+        {
+          "question": "How do I troubleshoot a Microsoft Office issue?",
+          "answer": "Try restarting your computer, ensure Office is up-to-date, and consider reinstalling.",
+          "aria-controls": "panel6-content",
+          "id": "panel6-header"
+        }
+      ]
+    },
+    {
+      "title": "Email",
+      "questions": [
+        {
+          "question": "What do I do if I can't send or receive emails?",
+          "answer": "Check your internet connection, ensure your email client is configured correctly, and try restarting your email client.",
+          "aria-controls": "panel1-content",
+          "id": "panel1-header"
+        },
+        {
+          "question": "Why do I keep getting email bounce-backs?",
+          "answer": "Check your email address, ensure it",
+          "aria-controls": "panel2-content",
+          "id": "panel2-header"
+        },
+        {
+          "question": "How do I fix a missing or deleted email?",
+          "answer": "Check your email trash folder, ensure your email client is configured correctly, and try contacting your email administrator.",
+          "aria-controls": "panel2-content",
+          "id": "panel2-header"
+        },
+        {
+          "question": "What do I do if I'm unable to log in to my email account?",
+          "answer": "Check your password, ensure it's correct, and try resetting your password.",
+          "aria-controls": "panel2-content",
+          "id": "panel2-header"
+        }
+      ]
+    },
+    {
+        "title": "Printer Issues",
+        "questions": [
+            {
+                "question": "What do I do if my printer won't print?",
+                "answer": "Check the printer's power cord, ensure it's securely plugged in, and try restarting the printer.",
+                "aria-controls": "panel1-content",
+                "id": "panel1-header"
+            }
+        ] 
+    },
+    {
+        "title": "Cybersecurity",
+        "questions": [
+            {
+                "question": "What do I do if I suspect a malware infection?",
+                "answer": "Disconnect from the internet, run a full virus scan, and consider seeking IT assistance.",
+                "aria-controls": "panel1-content",
+                "id": "panel1-header"
+            },
+            {
+                "question": "Why do I keep getting pop-ups and unwanted ads?",
+                "answer": "Check for malware, ensure your antivirus software is up-to-date, and try using an ad blocker.",
+                "aria-controls": "panel2-content",
+                "id": "panel2-header"
+            },
+            {
+                "question": "How do I fix a compromised email account?",
+                "answer": "Change your password, enable two-factor authentication, and consider running a virus scan.",
+                "aria-controls": "panel3-content",
+                "id": "panel3-header"
+            },
+            {
+                "question": "What do I do if I've been a victim of phishing?",
+                "answer": "Change your passwords, enable two-factor authentication, and report the incident to your IT department.",
+                "aria-controls": "panel4-content",
+                "id": "panel4-header"
+            },
+            {
+                "question": "Why do I keep getting password prompts?",
+                "answer": "Check for password expiration, ensure you're using the correct password, and try resetting your password.",
+                "aria-controls": "panel5-content",
+                "id": "panel5-header"
+            },
+            {
+                "question": "How do I troubleshoot a firewall issue?",
+                "answer": "Check the firewall settings, ensure they're configured correctly, and try restarting the firewall service.",
+                "aria-controls": "panel6-content",
+                "id": "panel6-header"
+            }
+        ]
+    }
+]

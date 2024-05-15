@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Dashboard, Footer, ForgotPassword, Header, Landing, Login, Logout, ProtectedRoute, Register } from "./components"
 import { ToastContainer } from "react-toastify"
+import { Cyber, Email, Hardware, Network, Printer, Software } from "./pages"
 
 function App() {
 
@@ -17,6 +18,12 @@ function App() {
 
         <Route element={<ProtectedRoute />} >
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/hardware" element={<Hardware />} />
+          <Route path="/software" element={<Software />} />
+          <Route path="/printer" element={<Printer />} />
+          <Route path="/cybersecurity" element={<Cyber />} />
+          <Route path="/email" element={<Email />} />
+          <Route path="/network" element={<Network />} />
         </Route>
       </Routes>
     </BrowserRouter>
