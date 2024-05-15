@@ -16,19 +16,15 @@ const Login = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
 
-         await Axios.post(`/auth/login`, values).then(res => {
-            userStore(res.data);
-            const {role} = userData();
-
-            if(role){
+        await Axios.post(`/login`, values).then(res => {
+           if(res.status === 200){
+                userStore(res.data);
                 navigate(`/dashboard`);
                 toast.success(`${res.data.msg}`);
                 window.location.reload();
             }else{
-                navigate('/sign-up');
-                toast.warning("Something was not set. Try singing up again.")
+                toast.warning("Something went wrong. Please try again.");
             }
-
          }).catch(error => {
             console.log(error);
             if(error.response.data.msg){
