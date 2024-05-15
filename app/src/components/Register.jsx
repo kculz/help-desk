@@ -33,7 +33,7 @@ const Register = () => {
     const { confirmPassword, ...requestData } = values;
 
    await Axios.post('/register', requestData).then(res => {
-      if(res.status === 200){
+      if(res.status === 201){
         console.log(res);
         userStore(res.data)
         navigate(`/dashboard`);
