@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 import { Axios } from "../../config";
 import { toast } from "react-toastify";
-import { userData, userStore } from "../helper";
+import { userStore } from "../helper";
 
 const Login = () => {
 
