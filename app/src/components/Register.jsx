@@ -32,13 +32,16 @@ const Register = () => {
 
     const { confirmPassword, ...requestData } = values;
 
-   await Axios.post('/auth/register', requestData).then(res => {
-      console.log(res);
-      userStore(res.data)
-
-      navigate(`/update-profile`);
-      toast.success(`${res.data.msg}`);
-      window.location.reload();
+   await Axios.post('/register', requestData).then(res => {
+      if(res.status === 200){
+        console.log(res);
+        userStore(res.data)
+        navigate(`/dashboard`);
+        toast.success(`${res.data.msg}`);
+        window.location.reload();
+      }else{
+        toast.warn("Something went wrong. Please try again.");
+      }
      }).catch(error => {
       console.log(error);
       if(error.response.data.msg){
@@ -67,8 +70,8 @@ const Register = () => {
 
                         <div className="md:flex gap-4 ">
                           <div className="w-full ">
-                                <label htmlFor="firstname" className="block mb-2 text-sm font-medium text-black dark:text-white">Fullname</label>
-                                <input type="text" name="firstname" id="firstname" className="bg-gray-50 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John Doe " required onChange={(e) => setValues({...values, fullname: e.target.value})}/>
+                                <label htmlFor="fullname" className="block mb-2 text-sm font-medium text-black dark:text-white">Fullname</label>
+                                <input type="text" name="fullname" id="fullname" className="bg-gray-50 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John Doe " required onChange={(e) => setValues({...values, fullname: e.target.value})}/>
                             </div>
                         </div>
 
@@ -78,8 +81,8 @@ const Register = () => {
                                 <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required onChange={(e) => setValues({...values, email: e.target.value})}/>
                             </div>
                             <div className="w-full md:w-3/4">
-                                <label htmlFor="address" className="block mb-2 text-sm font-medium text-black dark:text-white">Username</label>
-                                <input type="text" name="address" id="address" placeholder="johndoe095" className="bg-gray-50 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="" onChange={(e) => setValues({...values, username: e.target.value})}/>
+                                <label htmlFor="username" className="block mb-2 text-sm font-medium text-black dark:text-white">Username</label>
+                                <input type="text" name="username" id="username" placeholder="johndoe095" className="bg-gray-50 border border-gray-300 text-black sm:text-sm rounded-lg focus:ring-orange-600 focus:border-orange-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="" onChange={(e) => setValues({...values, username: e.target.value})}/>
                             </div>
                         </div>
 
