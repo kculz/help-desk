@@ -7,5 +7,6 @@ import ForgotPassword from "./ForgotPassword";
 import Register from "./Register";
 import ProtectedRoute from "./ProtectedRoute";
 import Logout from "./Logout";
+import Contact from "./Contact";
 
-export { Landing, Login, Dashboard, Header, Footer, ForgotPassword, Register, ProtectedRoute, Logout };
+export { Landing, Login, Dashboard, Header, Footer, ForgotPassword, Register, ProtectedRoute, Logout, Contact };

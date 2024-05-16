@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Dashboard, Footer, ForgotPassword, Header, Landing, Login, Logout, ProtectedRoute, Register } from "./components"
+import { Contact, Dashboard, Footer, ForgotPassword, Header, Landing, Login, Logout, ProtectedRoute, Register } from "./components"
 import { ToastContainer } from "react-toastify"
 import { Cyber, Email, Hardware, Network, Printer, Software } from "./pages"
 
@@ -12,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
